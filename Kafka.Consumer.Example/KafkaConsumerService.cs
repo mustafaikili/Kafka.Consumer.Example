@@ -1,5 +1,6 @@
 using System.Threading;
 using System.Threading.Tasks;
+using Kafka.Consumer.Example.Consumers;
 using Microsoft.Extensions.Hosting;
 
 namespace Kafka.Consumer.Example
@@ -7,9 +8,9 @@ namespace Kafka.Consumer.Example
     public class KafkaConsumerService : BackgroundService
     {
         
-        private readonly Consumer _consumer;
+        private readonly ConsumerExample _consumer;
 
-        public KafkaConsumerService(Consumer consumer)
+        public KafkaConsumerService(ConsumerExample consumer)
         {
             _consumer = consumer;
         }

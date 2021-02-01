@@ -3,9 +3,9 @@ using System.Threading.Tasks;
 using Confluent.Kafka;
 using Trendyol.Confluent.Kafka;
 
-namespace Kafka.Consumer.Example
+namespace Kafka.Consumer.Example.Consumers
 {
-    public class Consumer : KafkaConsumer
+    public class ConsumerExample : KafkaConsumer
     {
         protected override Task OnConsume(ConsumeResult<string, string> result)
         {

@@ -1,3 +1,4 @@
+using Kafka.Consumer.Example.Consumers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -19,7 +20,7 @@ namespace Kafka.Consumer.Example
         {
             services.AddHostedService<KafkaConsumerService>();
 
-            services.AddKafkaConsumer<Consumer>(configuration =>
+            services.AddKafkaConsumer<ConsumerExample>(configuration =>
             {
                 configuration.Topic = "MyTopic";
                 configuration.GroupId = "MyGroup";

@@ -11,7 +11,7 @@
       <PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0" />
       <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="5.0.2" />
       <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
-      <PackageReference Include="Trendyol.Confluent.Kafka" Version="1.0.1" />
+      <PackageReference Include="Trendyol.Confluent.Kafka" Version="1.0.2" />
 
     </ItemGroup>
 
